@@ -92,7 +92,23 @@ Perform either 3.a. or 3.b. depending on your operating system.
   * Problem: Facing issue with compatibility between networkx 1.1 and 2.2
   * Solution: Navigate to file with error and delete the "_iter" portion
 
-## Copyright and Warranty Information
+
+## Running 575 Project Code
+
+Use environment.yml with the following command to make it work:
+
+    ```bash
+    conda env create -f environment.yml
+    conda activate ts_spot_env
+    ```
+
+Example usage:
+
+    ```bash
+    python3 find_path_from_spec_and_ts.py ../tests/triangle_graph.yaml "F obs && ! F c" -o automaton.txt -p path.txt -s 100
+    ```
+
+# Copyright and Warranty Information
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
